@@ -105,11 +105,6 @@ jobs:
           node-version-file: .nvmrc
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Upgrade npm for trusted publishing
-        run: |
-          npm install --global npm@11
-          npm --version
-
       - uses: pnpm/action-setup@v4
 
       - name: Download built package
